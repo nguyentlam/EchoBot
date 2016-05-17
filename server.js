@@ -11,9 +11,10 @@ var botConnectorOptions = {
 var bot = new builder.BotConnectorBot(botConnectorOptions);
 bot.add('/', function (session) {
     //respond with user's message
-    setTimeout(function () {
+    /*setTimeout(function () {
        session.send("You said: " + session.message.text);
-    }, 1000 * 60 * 3); // 3m
+    }, 1000 * 60 * 3);*/ // 3m
+    session.send(null);
 });
 
 // Setup Restify Server
